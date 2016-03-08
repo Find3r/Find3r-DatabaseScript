@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Database1", "Database1\Database1.sqlproj", "{0BB3C5B6-6E07-4677-AA3A-018C45CC3F6A}"
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Find3r-ScriptDatabase", "Database1\Find3r-ScriptDatabase.sqlproj", "{0BB3C5B6-6E07-4677-AA3A-018C45CC3F6A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
