@@ -67,5 +67,9 @@
     <Build Include="tblCategory.sql" />
     <Build Include="tblUserReport.sql" />
     <Build Include="tblNotification.sql" />
+    <Build Include="spCommentsReport.sql" />
+    <Build Include="spFollowingReports.sql" />
+    <Build Include="spLastReports.sql" />
+    <Build Include="spCategoryReports.sql" />
   </ItemGroup>
 </Project>

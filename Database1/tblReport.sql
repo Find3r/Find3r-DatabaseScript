@@ -1,5 +1,5 @@
 ﻿
-CREATE TABLE [dbo].[REPORT] (
+CREATE TABLE [dbo].[Report] (
     [id]		  BIGINT IDENTITY NOT NULL,
     [__createdAt] DATETIMEOFFSET (3) NOT NULL,
     [__updatedAt] DATETIMEOFFSET (3) NULL,
@@ -26,7 +26,7 @@ CREATE TABLE [dbo].[REPORT] (
 
 GO
 CREATE CLUSTERED INDEX [__createdAt]
-    ON [dbo].[REPORT]([__createdAt] ASC);
+    ON [dbo].[Report]([__createdAt] ASC);
 
 
 GO
@@ -35,6 +35,6 @@ ALTER TABLE [dbo].[REPORT]
 
 
 GO
-ALTER TABLE [dbo].[REPORT]
+ALTER TABLE [dbo].[Report]
     ADD CONSTRAINT [DF_REPORT___createdAt] DEFAULT (CONVERT([datetimeoffset](3),sysutcdatetime(),(0))) FOR [__createdAt];
 

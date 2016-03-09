@@ -1,6 +1,6 @@
 ﻿
 
-CREATE TABLE [dbo].[UserPost] (
+CREATE TABLE [dbo].[UserReport] (
     [id]		  BIGINT IDENTITY NOT NULL,
     [__createdAt] DATETIMEOFFSET (3) NOT NULL,
     [__updatedAt] DATETIMEOFFSET (3) NULL,
@@ -20,15 +20,15 @@ CREATE TABLE [dbo].[UserPost] (
 
 GO
 CREATE CLUSTERED INDEX [__createdAt]
-    ON [dbo].[UserPost]([__createdAt] ASC);
+    ON [dbo].[UserReport]([__createdAt] ASC);
 
 
 GO
-ALTER TABLE [dbo].[UserPost]
-    ADD CONSTRAINT [DF_UserPost_id] primary key(id);
+ALTER TABLE [dbo].[UserReport]
+    ADD CONSTRAINT [DF_UserReport_id] primary key(id);
 
 
 GO
-ALTER TABLE [dbo].[UserPost]
-    ADD CONSTRAINT [DF_UserPost___createdAt] DEFAULT (CONVERT([datetimeoffset](3),sysutcdatetime(),(0))) FOR [__createdAt];
+ALTER TABLE [dbo].[UserReport]
+    ADD CONSTRAINT [DF_UserReport___createdAt] DEFAULT (CONVERT([datetimeoffset](3),sysutcdatetime(),(0))) FOR [__createdAt];
 
